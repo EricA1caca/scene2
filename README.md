@@ -38,3 +38,45 @@ This project is an automation tool designed to generate advertising copy by anal
 
 ```bash
 pip install pillow pytesseract requests openai
+
+
+运行步骤
+
+1. 配置 Tesseract OCR
+
+Windows 用户：需要安装 Tesseract OCR，并设置正确的路径。可以在代码中修改以下路径：
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
+Linux/Mac 用户：可以通过包管理器安装 Tesseract，例如：
+sudo apt-get install tesseract-ocr
+
+
+2. 配置 API 密钥
+
+替换代码中的 api_key 和 access_token，使用你自己的百度 API 和 DeepSeek API 密钥。
+api_key = "你的星河大模型 API Key"
+access_token = "你的百度 Access Token"
+
+
+3. 运行脚本
+指定包含图片的文件夹路径，运行脚本即可批量生成广告文案。
+python main.py
+
+
+##生成结果展示
+
+以下是基于图片内容生成的广告文案示例：
+处理图片: example.jpg
+🖼️ 图片内容：这是一张展示美丽风景的图片，有蓝天白云和绿色的草地。
+📢 广告文案：感受大自然的魅力！蓝天白云与绿草如茵，带你逃离城市的喧嚣，享受宁静与美好。快来体验这片纯净的自然风光吧！
+
+--------------------------------------------------
+
+代码结构
+
+image-to-ad/
+│── .gitignore
+│── LICENSE
+│── README.md
+│── main.py
+│── requirements.txt
