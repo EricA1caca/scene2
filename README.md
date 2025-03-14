@@ -36,11 +36,10 @@ This project is an automation tool designed to generate advertising copy by anal
 ### 1. 安装依赖
 首先，确保你已经安装了 Python 3.x，然后安装所需的 Python 库：
 
-```bash
 pip install pillow pytesseract requests openai
 
 
-运行步骤
+### 运行步骤
 
 1. 配置 Tesseract OCR
 
@@ -63,7 +62,7 @@ access_token = "你的百度 Access Token"
 python main.py
 
 
-##生成结果展示
+### 生成结果展示
 
 以下是基于图片内容生成的广告文案示例：
 处理图片: example.jpg
@@ -72,7 +71,7 @@ python main.py
 
 --------------------------------------------------
 
-代码结构
+### 代码结构
 
 image-to-ad/
 │── .gitignore
