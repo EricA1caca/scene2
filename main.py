@@ -9,7 +9,7 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tessera
 
 # 初始化客户端
 client = OpenAI(
-    api_key="75aaa5837e148b567ba15405e9a5422f97c1d0b6",  # 替换为你的星河大模型 API Key
+    api_key="请输入星河大模型 API 密钥: ",  # 替换为你的星河大模型 API Key
     base_url="https://aistudio.baidu.com/llm/lmapi/v3"  # 星河大模型的 API 域名
 )
 
